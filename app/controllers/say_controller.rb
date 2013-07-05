@@ -4,5 +4,6 @@ class SayController < ApplicationController
   end
 
   def goodbye
-  end
+  	@yesterday = Time.now - 60 * 60 * 24
+   end
 end
